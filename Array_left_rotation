@@ -1,0 +1,10 @@
+n,d=input().split()
+n=int(n)
+d=int(d)
+a=[int(i) for i in input().split()]
+for j in range(d):
+    x=a.pop(0)
+   
+    a.append(x)
+for k in range(n):
+    print(a[k],end=' ')
