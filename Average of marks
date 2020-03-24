@@ -1,0 +1,22 @@
+n = int(input('no of students:'))
+student_name = []
+student_avg = []
+for i in range(n):
+    name =input('Name:')
+    scores = [int(j) for j in input('Marks:').split()]
+    subject = ['Physics', 'Chemistry', 'Biology']
+    D=dict(zip(subject,scores))
+    avg=((D['Physics']+D['Chemistry']+D['Biology'])/3)
+
+    student_name.append(name)
+    student_avg.append(avg)
+    E=dict(zip(student_name,student_avg))
+query_name=input('Enter the name:')
+print(E[query_name])
+
+
+
+
+
+
+
