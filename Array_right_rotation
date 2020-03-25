@@ -1,0 +1,13 @@
+n,d=input().split()
+n=int(n)
+d=int(d)
+a=[int(i) for i in input().split()]
+for k in range(d):
+    x=a.pop(n-1)
+    t=a[0]
+    a.append(t)
+    a.insert(0,x)
+for l in range(n):
+    print(a[l],end=' ')
+
+
